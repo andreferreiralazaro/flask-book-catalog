@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+    {% block content %}
+      <br>
+      <div class="container">
+        <h4 style="..."> Sorry, the page you are looking for could not be found... </h4>
+        <span class="label label-primary">
+            <a href="{{  url_for('main.display_books') }}"  style="color: floralwhite">Back to Home</a>
+        </span>
+      </div>
+
+    {% endblock %}

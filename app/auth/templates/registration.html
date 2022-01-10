@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+    <div class="container form">
+        <h4 class="form"> Register here </h4>
+        <hr>
+        <br>
+        {{ form.hidden_tag() }}
+        {{ wtf.quick_form(form) }}
+        <!--form é a variável criada em routes.py que é passada para o wtf.quick_form-->
+
+    </div>
+
+{% endblock content %}
